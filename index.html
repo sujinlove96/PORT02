@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/js_min.js"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="shortcut icon" href="./favicon (1).ico" type="image/x-icon">
+  <title>이범준 포트폴리오</title>
+  <style>
+    .container{
+      position: relative;
+      margin-bottom: 150px;
+    }
+
+    .container .img-box1,.container .img-box2{
+      display: none;
+    }
+   
+
+
+    h1{
+      animation-name:no;
+      animation-duration: 4s;
+      position: absolute;
+      top: 40%;
+      right: 30%;
+      color: #fff;
+      opacity: 0.7;
+      z-index: 1000;
+      font-weight: 900;
+      font-size: 50px;
+      font-family: 'Jua', sans-serif;
+    }
+
+    .container p{
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      top: 10%;
+    }
+
+    .container .top1{
+      margin-left: 10%;
+      color:#fff;
+      animation-name:Okay;
+      animation-duration: 4s;
+      font-weight: 700;
+    }
+
+    .container .top2{
+      right: 0;
+      margin-right: 10%;
+      color:#fff;
+      animation-name:Okay;
+      animation-duration: 4s;
+      font-weight: 700;
+    }
+    .wrap{
+      overflow: hidden;
+    }
+    body{
+      background:whitesmoke;
+    }
+
+
+    .container{
+      position: relative;
+      margin-bottom: 100px;
+    }
+
+    .container img:nth-child(2),.container img:nth-child(3){
+      display: none;
+    }
+
+    .container ul{
+      font-family: 'Jua', sans-serif;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      float: right;
+      position:  absolute;
+      top: 0;
+      right: 0;
+      margin-top: 15px;
+      margin-right: 20px;
+    }
+
+    .container ul li{
+      font-family: 'Jua', sans-serif;
+      margin-right: 20px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #fff;
+      /* opacity: 0.7; */
+      animation-name:Okay;
+      animation-duration: 4s;
+    }
+
+    .container ul li:hover{
+      color: lightgreen;
+    }
+
+    h2,h3,p{
+      font-family: 'Jua', sans-serif;
+      color: #000;
+      text-align: center;
+    }
+
+    h2{
+      font-weight:700;
+      font-size: 30px;
+    }
+
+    h3{
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .img-move{
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    
+
+    .sec01 img{
+      width: 320px;
+      height: 300px;
+      margin: auto 85px;
+      border-radius: 70%;
+    }
+    
+    .txt{
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 100px;
+    }
+
+    .sec01 h2,h3,p{
+      margin-bottom: 15px;
+    }
+
+    .sec01 h3{
+      font-size: 23px;
+    }
+
+    .sec01 p{
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .sec02{
+      margin-bottom: 100px;
+    }
+
+    .sec02 h2{
+      margin-bottom: 30px;
+    }
+
+    .sec02 h3{
+      margin-top: 20px;
+      color: blueviolet;
+    }
+
+    .graph{
+      height: 40px;
+      background: #ccc;
+      border-radius: 40px;
+      margin: 0 30px;
+    }
+
+    .graph .html{
+      font-family: 'Jua', sans-serif;
+      display: block;
+      width: 85%;
+      height: 40px;
+      padding: 0 10px;
+      line-height: 40px;
+      text-align: right;
+      background: lightpink;
+      border-radius: 40px;
+      box-sizing: border-box;
+      color: #000;
+      animation: html 2s 1;
+    }
+
+    .graph .css{
+      font-family: 'Jua', sans-serif;
+      display: block;
+      width: 80%;
+      height: 40px;
+      padding: 0 10px;
+      line-height: 40px;
+      text-align: right;
+      background: lightgreen;
+      border-radius: 40px;
+      box-sizing: border-box;
+      color: #000;
+      animation: css 2s 1;
+    }
+
+    .graph .java{
+      font-family: 'Jua', sans-serif;
+      display: block;
+      width: 80%;
+      height: 40px;
+      padding: 0 10px;
+      line-height: 40px;
+      text-align: right;
+      background: lightblue;
+      border-radius: 40px;
+      box-sizing: border-box;
+      color: #000;
+      animation: java 2s 1;
+    }
+    .cont{
+      display: flex;
+      border: 1px solid #666;
+      box-shadow: 1px 1px #000;
+      margin: 0 20px 30px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .cont:hover{
+      margin: 10px;
+    }
+
+    
+
+    .cont img{
+      width: 55%;
+      float: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 10px;
+      }
+
+    .text{
+      float: right;
+      text-align: center;
+      padding: 5%;
+      
+    }
+
+    .sec04{
+      position: relative;
+      margin-top: 130px;
+      margin-bottom: 50px;
+    }
+
+    .sec04 .img{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .sec04 h2{
+      position: absolute;
+      top: 120px;
+      left: 23px;
+      margin: 0 150px;
+      margin-bottom: 30px;
+      color: #000;
+      font-weight: 700;
+      font-size: 23px;
+    }
+
+    .sec04 a{
+      position: absolute;
+      top: 240px;
+      left: 165px;
+      border: 1px solid black;
+      border-radius: 30px;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+    }
+
+    .sec04 .a1{
+      font-family: 'Jua', sans-serif;
+      top: 200px;
+    }
+
+    .sec04 .a2{
+      font-family: 'Jua', sans-serif;
+      top: 280px;
+    }
+
+    .footer{
+      margin-top: 30px;
+      margin-bottom: 100px;
+    }
+
+    address{
+      font-family: 'Jua', sans-serif;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+
+
+
+
+
+    @media(min-width:768px){
+      .container ul li{
+        color: black;
+      }
+
+      .container .top1, .container .top2{
+        color: black;
+      }
+
+      .container h1{
+        order: 2;
+        text-align: center;
+        color: black;
+      }
+
+      .container img:nth-child(1){
+        display: none;
+      }
+
+      .container img:nth-child(2){
+        display: block;
+      }
+
+      .container ul{
+        order: 3;
+        color: aqua;
+      }
+
+    .container h2{
+      left: 40%;
+      text-align: center;
+      padding-top: 130px;
+      font-size: 30px;
+    }
+    .sec01 img{
+      float: left;
+    margin-left: 90px;
+    
+    }
+    .text{
+      padding: 10%;
+      font-size: 20px;
+      text-align: center;
+    }
+    .sec04 h2{ 
+      left: 140px;
+      font-size: 40px;
+    }
+    .sec04 .a1{
+      margin-top: 55px;
+      left:40%;
+    }
+
+    .sec04 .a2{
+      font-family: 'Jua', sans-serif;
+      margin-top: 55px;
+      left:40%;
+    }
+
+
+  }
+  @media(min-width:1200px){
+
+    .container h1{
+      font-size: 70px;
+      top: 30%;
+      left: 35%;
+      color:#fff
+    }
+    .container h1, .container .top1, .container .top2{
+      color:#fff
+    }
+
+    .container img:nth-child(2){
+      display: none;
+    }
+    .container img:nth-child(3){
+      display: block;
+    }
+
+    .container ul li{
+      margin-left: 50px;
+      font-size: 35px;
+      color:#fff
+    }
+    .text{
+      padding: 15%;
+      font-size: 30px;
+    }
+    .sec01{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 150px;
+    }
+    .sec01 img{
+      width: 480px;
+      height: 480px;
+      margin-top: 1px;
+      margin-right: 17px;
+      
+    }
+
+    .sec01 .txt h2,.sec01 .txt h3,.sec01 .txt p{
+      font-size: 25px;
+      margin-left: 180px;
+      margin-top: 25px;
+    }
+    .sec01 .txt02 h2,.sec01 .txt02 h3,.sec01 .txt02 p{
+      margin-left: 25px;
+      margin-top: 70px;
+
+    }
+    .sec01 .txt01 h2,.sec01 .txt01 h3,.sec01 .txt01 p{
+      margin-left: 15px;
+    } 
+
+    .sec03{
+      display: inline-block;
+    }
+
+    .cont01{
+      position: absolute;
+      width: 45%;
+      left: 3%;
+      height: 45%;
+    }
+
+    .cont02{
+      position: absolute;
+      top: 2560px;
+      right: 3%;
+      width: 45%;
+      height: 45%;
+    }
+
+    .cont03{
+      position: absolute;
+      top: 3050px;
+      left: 3%;
+      width: 45%;
+      height: 45%;
+    }
+
+    .cont04{
+      position: absolute;
+      top: 3050px;
+      right: 3%;
+      width: 45%;
+      height: 45%;
+    }
+    .text{
+      padding-right: 45px;
+    }
+
+}
+
+
+
+
+
+    @keyframes html {
+      0%{
+        font-family: 'Jua', sans-serif;
+        width: 0;
+      }
+
+      100%{
+        font-family: 'Jua', sans-serif;
+        width: 85%;
+      }
+    }
+
+    @keyframes css {
+      0%{
+        font-family: 'Jua', sans-serif;
+        width: 0;
+      }
+
+      100%{
+        font-family: 'Jua', sans-serif;
+        width: 80%;
+      }
+    }
+
+    @keyframes java {
+      0%{
+        font-family: 'Jua', sans-serif;
+        width: 0;
+      }
+
+      100%{
+        font-family: 'Jua', sans-serif;
+        width: 80%;
+      }
+    }
+  
+
+    @keyframes Okay{
+      0% {
+        opacity: 0;
+      }
+      100% { 
+        opacity: 1;
+      }
+    }
+
+    @keyframes no{
+      0% {
+        opacity: 0;
+      }
+      100% { 
+        opacity: 0.7;
+      }
+    }
+  </style>
+
+  <script>
+
+    $(document).ready(function($) {
+
+$(".scroll_move").click(function(event){         
+
+  event.preventDefault();
+
+  $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+
+});
+
+});
+
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="container">
+        <ul>
+          <li><a href="#div2" id="scroll_move">Profile</a></li>
+          <li><a href="#div3" id="scroll_move">Portfolio</a></li>
+          <li><a href="#div4" id="scroll_move">Contect</a></li>
+        </ul>
+        <div class="img-box">
+        <img src="./images/main1.jpg" alt="메인배경">
+        <img src="./images/main2.jpg" alt="메인배경">
+        <img src="./images/main3.jpg" alt="메인배경">
+      </div>
+      <p class="top1">WEB Publisher
+        <br>
+        [ LEE BUM JUN ]</p>
+      <p class="top2">"PORTFOLIO"
+        <br>
+        "VOL . 01"
+      </p>
+      <h1>
+        WEB
+        <br>
+        PUBLISHER!
+        <br>
+      </h1>
+    </div>
+
+    <section class="sec01">
+      <img src="./images/selfpic.png.jpg" alt="myprofile">
+      <div class="txt txt01">
+      <h2>이범준</h2>
+      <h3>1996.11.30</h3>
+      <p>sujinlove96@naver.com</p>
+      <!-- 이력 -->
+      <h3>이력</h3>
+      <p>
+        2023.03.16~2023.08.04 <br>
+        인천IT직업능력개발학원
+        <br>
+        웹표준 반응형 웹디자인&웹퍼블리셔 양성과정 수료
+        <br>
+        컴퓨터 활용능력 1급 자격증 <br>
+        한국사 능력검정 1급 자격증 <br>
+        ITQ 파워포인트 자격증
+        
+        </p>
+         </div>
+         <div class="txt txt02">
+        <h3>Personality Type</h3>
+        <p>ESFP - 성격유형 <br>
+        
+          다정다감하고 친절한 ESFP는 타인에게 매우 친절하며<br> 수용적이고 현실적이다.<br>
+          어떠한 상황이 닥치더라도 잘 대처하며 적응 할 수 있으며,<br> 선입견이 없어 개방적이고 관용적인 편이다.<br>
+          새로운 스타일을 시험하는 것을 좋아하여<br> 독창성과 창의성을 가지고 있다.
+        </div>
+    </section>
+  </div>
+  
+  <div id="div3">
+    <section class="sec02">
+      <h2>SKILL</h2>
+      <h3>HTML</h3>
+      <div class="graph">
+        <span class="html">85%</span>
+      </div>
+      <h3>CSS</h3>
+      <div class="graph">
+        <span class="css">80%</span>
+      </div>
+      <h3>Java</h3>
+      <div class="graph">
+        <span class="java">80%</span>
+      </div>
+    </section>
+    <section class="sec03">
+      <h2>PORTFOLIO</h2>
+      <div class="cont cont01 clearfix">
+        <img src="./images/port01.PNG " alt="thum1">
+        <div class="text">
+          <h2>모질라</h2>
+          <p>06.10~06.20</p>
+          <p>HTML5,CSS,JAVA<br>
+        브라우저 소개 페이지와 <br>다운로드 페이지 제작</p>
+        </div>
+      </div>
+      </div>
+      <div class="cont cont02 clearfix">
+        <img src="./images/port02.jpg " alt="thum1">
+        <div class="text">
+          <h2>할리스</h2>
+          <p>06.24~06.30</p>
+          <p>HTML5,CSS<br>
+         할리스커피의 모바일<br>페이지 제작</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="cont cont03 clearfix">
+        <img src="./images/port03.jpg " alt="thum1">
+        <div class="text">
+          <h2>여행사</h2>
+          <p>7.1~7.12</p>
+          <p>HTML5,CSS,<br>JAVA,JQUERY<br>
+        투어리즘 여행사 페이지 제작</p>
+        </div>
+      </div>
+      </div>
+      <div class="cont cont04 clearfix">
+        <img src="./images/port04.jpg " alt="thum1">
+        <div class="text">
+          <h2>메가박스</h2>
+          <p>07.09~07.19</p>
+          <p>HTML5,CSS<br>JAVA,JQUERY<br>
+        메가박스 메인페이지 <br>제작</p>
+        </div>
+      </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- <div id="div4">
+    <section class="sec04">
+      <div class="img">
+        <img src="./images/footer.png" alt="circle01">
+      </div>
+        <h2>"감사합니다."</h2>
+        <a href="#" class="a1">이력서 바로가기</a>
+        <a href="#" class="a2">자소서 바로가기</a>
+    </section>
+    </div> -->
+    <!-- <footer class="footer">
+      <address>
+        Copyright 2023. Lee Bum Jun. All pictures cannot be <br>
+        copied without permission. <br> ※ 해당 포트폴리오에 사용된 일부 이미지들은 <br>
+        비영리 비상업적인 목적으로 사용되었습니다.
+      </address>
+    </footer> -->
+  </div>
+
+</body>
+</html>
